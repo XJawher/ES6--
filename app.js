@@ -87,14 +87,14 @@ dinner.cook(8);*/
 
 //-------------------------- extends start   --------------//
 
-class foods {
+/*class foods {
   constructor(bread,drink) {
     this.bread = bread;
     this.drink = drink;
   }
   eat () {
-    return `今天享受${this.bread}和${this.drink}`
-    // console.log( `今天享受${bread}和${drink}`)
+    // return `今天享受${this.bread}和${this.drink}`
+    console.log( `今天享受${this.bread}和${this.drink}`)
   }
 }
 
@@ -104,11 +104,52 @@ class dinner extends foods {
   }
 }
 let li = new dinner('writeBread','beer');
-console.log(li.eat());//今天享受writeBread和beer
-
+// console.log(li.eat());//今天享受writeBread和beer
+li.eat();*/
 
 
 
 
 //--------------------------  extends over  --------------//
 
+
+
+
+//-------------------------- extends start   --------------//
+let set = new Set();   
+['milk','meal','tea','hotpot','wine','beer','meal','hotpot'].forEach(x => set.add(x));
+
+
+set.add('老干妈');
+console.log(set)//Set { 'milk', 'meal', 'tea', 'hotpot', 'wine', 'beer', '老干妈' }
+console.log(set.has('tea'));//true
+set.delete('meal');
+console.log(set);//Set { 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' }
+console.log(set.size);//6
+// set.clear();
+// console.log(set);//Set {}    
+
+let Arr = Array.from(set);
+console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去重新思路
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------------------  静态方法 over  --------------//
