@@ -115,7 +115,7 @@ li.eat();*/
 
 
 //-------------------------- extends start   --------------//
-let set = new Set();   
+/*let set = new Set();   
 ['milk','meal','tea','hotpot','wine','beer','meal','hotpot'].forEach(x => set.add(x));
 
 
@@ -129,26 +129,38 @@ console.log(set.size);//6
 // console.log(set);//Set {}    
 
 let Arr = Array.from(set);
-console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去重新思路
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去重新思路*/
 
 //--------------------------  静态方法 over  --------------//
+
+
+//--------------------------  Map start  --------------//
+let food = new Map();
+let fruit = {},cook = function() {},drink = 'tea';   
+food.set(fruit,'watermalone');
+food.set(cook,'apple');
+food.set(drink,'doughnut');
+console.log(food);//
+console.log(food.size);
+console.log(food.get(cook));  
+// food.delete(drink);
+// console.log(food.has(drink));//false
+console.log(food.keys());
+console.log(food.values());
+console.log(food.entries());
+//--------------------------  Map over  --------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
