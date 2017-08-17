@@ -33,6 +33,30 @@
 
 
 //-------------------------- get set start   --------------//
+// class dinner { 
+//   constructor(food = 'hotpot') { 
+//     this.food = food;  
+//     this.dish = [];
+//   } 
+
+//   get foods() {
+//     return this.dish;
+//   }
+//   set foods(dish) {
+//     this.dish.push(dish)
+//   }
+// } 
+// let cook = new dinner();
+// console.log(cook.foods = 'beer');//set > beer
+// console.log(cook.foods = 'tea');//set >  tea
+// console.log(cook.foods);//get > ['beer','tea']
+
+
+//--------------------------  get set over  --------------//
+
+//-------------------------- 静态方法 start   --------------//
+
+
 class dinner { 
   constructor(food = 'hotpot') { 
     this.food = food;  
@@ -45,12 +69,32 @@ class dinner {
   set foods(dish) {
     this.dish.push(dish)
   }
+
+  static cook(num) {//静态方法不需要实例化就可以使用
+    console.log(`今天吃饭的人数是：${num}人`)
+  }
+
 } 
 let cook = new dinner();
-console.log(cook.foods = 'beer');//set
-console.log(cook.foods = 'beer');//set   
-console.log(cook.foods);//get
+console.log(cook.foods = 'beer');//set > beer
+console.log(cook.foods = 'tea');//set >  tea
+console.log(cook.foods);//get > ['beer','tea']
+dinner.cook(8);
 
 
-//--------------------------  get set over  --------------//
+
+
+
+//--------------------------  静态方法 over  --------------//
+
+
+
+
+
+
+
+
+
+
+
 
