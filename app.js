@@ -57,7 +57,6 @@
 //-------------------------- 静态方法 start   --------------//
 
 
-class dinner { 
 /*class dinner { 
   constructor(food = 'hotpot') { 
     this.food = food;  
