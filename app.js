@@ -58,6 +58,7 @@
 
 
 class dinner { 
+/*class dinner { 
   constructor(food = 'hotpot') { 
     this.food = food;  
     this.dish = [];
@@ -75,11 +76,8 @@ class dinner {
   }
 
 } 
-let cook = new dinner();
-console.log(cook.foods = 'beer');//set > beer
-console.log(cook.foods = 'tea');//set >  tea
-console.log(cook.foods);//get > ['beer','tea']
-dinner.cook(8);
+let cook = new dinner();    
+dinner.cook(8);*/
 
 
 
@@ -87,14 +85,30 @@ dinner.cook(8);
 
 //--------------------------  静态方法 over  --------------//
 
+//-------------------------- extends start   --------------//
+
+class foods {
+  constructor(bread,drink) {
+    this.bread = bread;
+    this.drink = drink;
+  }
+  eat () {
+    return `今天享受${this.bread}和${this.drink}`
+    // console.log( `今天享受${bread}和${drink}`)
+  }
+}
+
+class dinner extends foods {
+  constructor(bread,drink){
+    super(bread,drink);
+  }
+}
+let li = new dinner('writeBread','beer');
+console.log(li.eat());//今天享受writeBread和beer
 
 
 
 
 
-
-
-
-
-
+//--------------------------  extends over  --------------//
 
