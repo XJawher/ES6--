@@ -1,2 +1,2 @@
-var server = require("./appH5.js"); 
+var server = require("./app.js"); 
 server.start();
