@@ -20,7 +20,12 @@ function animate(ball,distance,cb) {
         marginLeft--  
       }
 
-      ball.style.marginLeft = marginLeft +"px"/*把调整好的值设置给 ball*/
+      ball.style.marginLeft = marginLeft +"px"
+      /*把调整好的值设置给 ball 这里要注意，如果在 HTML 文件的开头没有加 <!DOCTYPE html> 中的 html 
+      也就是开头是 <!DOCTYPE> 那么这里就不能加 “px” ball.style.marginLeft = marginLeft
+      加了 html 才可以加 "px" 单位，要不然动画不能正常执行，在回调三步以后就 marginLeft = undefined
+      了 
+      */ 
       animate(ball,distance,cb)
     }      
   },13) 
