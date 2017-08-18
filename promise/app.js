@@ -1,6 +1,7 @@
 var http = require("http");
 var fs = require('fs');
 var url = require('url');
+
 exports.start = function(){
     http.createServer(function(request, response) {
         var pathname = url.parse(request.url).pathname;
@@ -35,3 +36,5 @@ exports.start = function(){
     }).listen(8086)
     console.log('server running on http://127.0.0.1:8086/')
 }
+
+server.start()
