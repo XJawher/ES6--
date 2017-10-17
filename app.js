@@ -135,32 +135,58 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
 
 
 //--------------------------  Map start  --------------//
-let food = new Map();
-let fruit = {},cook = function() {},drink = 'tea';   
-food.set(fruit,'watermalone');
-food.set(cook,'apple');
-food.set(drink,'doughnut');
-console.log(food);//
-console.log(food.size);
-console.log(food.get(cook));  
-// food.delete(drink);
-// console.log(food.has(drink));//false
-console.log(food.keys());
-console.log(food.values());
-console.log(food.entries());
+// let food = new Map();
+// let fruit = {},cook = function() {},drink = 'tea';   
+// food.set(fruit,'watermalone');
+// food.set(cook,'apple');
+// food.set(drink,'doughnut');
+// console.log(food);//
+// console.log(food.size);
+// console.log(food.get(cook));  
+// // food.delete(drink);
+// // console.log(food.has(drink));//false
+// console.log(food.keys());
+// console.log(food.values());
+// console.log(food.entries());
 //--------------------------  Map over  --------------//
 
 
 
+// {
+//   let arr = Array.of(1,"sdad",5,[1,3,"ee"],2)
+//   console.log("arr=",arr)
+// }
 
 
+// {
+//   let  arr = [1.3,4,5,6,7,7];
+//   console.log(Array.from(arr,(item)=>{return item*2}))
+// }
+
+// {
+//   console.log("fill",[1,18,"","sss",undefined].fill('fill',1,2))
+// }  
 
 
+/* {
+  for(let index of ['a','b','c'].keys()){
+    console.log('keys',index)
+  }
+  for(let values of ['a','b','c'].values()){
+    console.log('values',values)
+  }
+  for(let entries of ['a','b','c'].entries()){
+    console.log('entries',entries)
+  }
+} */
 
 
+// {
+//   console.log([1,2,1,3,4,5,6,5,,89,7].find(function(item){return item>4}))
+//   console.log([1,2,1,3,4,5,6,5,,89,7].findIndex(function(item){return item>4}))
+// }
 
 
-
-
-
-
+{
+  console.log("判断包含",[11,3,"test",NaN].includes("test"))
+}
