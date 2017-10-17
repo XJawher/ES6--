@@ -40,7 +40,7 @@
   console.log(a,b)
 } */
 
-
+/* 
 {
   let postData = {
     title:"abs",
@@ -53,10 +53,19 @@
   }
   let {title:title1,result:[{title:title2}],result:[{result2:[{title:title3}]}]} = postData;
   console.log(title1,title2,title3)
+} */
+
+/* {
+  let str = "loveJ";
+  console.log('includes',str.includes('o'));
+  console.log('start',str.startsWith('l'));
+  console.log('end',str.endsWith('J'));
+} */
+
+{
+  let str = 'acb';
+  console.log(str.repeat(3))
 }
-
-
-
 
 
 
