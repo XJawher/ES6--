@@ -186,7 +186,32 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
 //   console.log([1,2,1,3,4,5,6,5,,89,7].findIndex(function(item){return item>4}))
 // }
 
-
+/* 
 {
   console.log("判断包含",[11,3,"test",NaN].includes("test"))
-}
+} */
+
+
+// {
+//   function test(x,y = "a") {
+//     console.log(x,y)
+//   }
+//   test('b');
+// }
+
+
+  let   x = 'abc';
+  function test2(e,y=x) {
+    console.log('x = abc ',e,y)
+  }
+  test2('def')
+  
+    // var   x1 = 'abc';
+    // var y1 = '';
+    // y1 = x1 ;
+    // console.log('x = abc ',x1,y1)
+    // function test2(x1,y1) {
+    //   console.log('x = abc ',x1,y1)
+    // }
+    // test2()
+
