@@ -200,11 +200,11 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
 // }
 
 
-  let   x = 'abc';
-  function test2(e,y=x) {
-    console.log('x = abc ',e,y)
-  }
-  test2('def')
+  // let   x = 'abc';
+  // function test2(e,y=x) {
+  //   console.log('x = abc ',e,y)
+  // }
+  // test2('def')
   
     // var   x1 = 'abc';
     // var y1 = '';
@@ -215,3 +215,30 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
     // }
     // test2()
 
+{
+  //简洁表示法
+  let o = 1;
+  let k = 2;
+  let ES5 = {
+    o:o,
+    k:k
+  };
+  let ES6 = {
+    o,k
+  }
+  console.log(ES5,ES6)//{ o: 1, k: 2 } { o: 1, k: 2 }  
+}
+
+{
+  let ES5 = {
+    o: function () {
+      console.log("ES5")
+    }
+  };
+  let ES6 = {
+    o (){
+      console.log('ES6')
+    }
+  }
+  console.log(ES5.o(),ES6.o())
+}
