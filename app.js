@@ -215,7 +215,7 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
     // }
     // test2()
 
-{
+/* {
   //简洁表示法
   let o = 1;
   let k = 2;
@@ -241,4 +241,48 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
     }
   }
   console.log(ES5.o(),ES6.o())
+} */
+
+/* {
+  //属性表达式
+  let a = 'b';
+  let ES5 = {
+    a:'hello'
+  };
+  let ES6 = {
+    [a] : 'world'
+  }
+  console.log(ES5,ES6)//{ a: 'hello' } { b: 'world' }
 }
+
+
+{
+  //新增 API
+  //Object.is() 判断是不是相等    
+  console.log('字符串',Object.is(1,1))
+} */
+
+{
+  console.log('拷贝',Object.assign({b:2,c:3,d:4},{a:1}))//拷贝 { b: 2, c: 3, d: 4, a: 1 }
+}
+
+
+
+
+
+/* {
+  let entries = { b: 2, c: 3, d: 4, a: 1 };
+  for (let [keys,values] of Object.entries(entries) ){
+    console.log([keys,values])
+  }
+}
+[ 'b', 2 ]
+[ 'c', 3 ]
+[ 'd', 4 ]
+[ 'a', 1 ] */
+
+
+
+
+
+
