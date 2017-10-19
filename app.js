@@ -262,9 +262,9 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
   console.log('字符串',Object.is(1,1))
 } */
 
-{
+/* {
   console.log('拷贝',Object.assign({b:2,c:3,d:4},{a:1}))//拷贝 { b: 2, c: 3, d: 4, a: 1 }
-}
+} */
 
 
 
@@ -281,7 +281,15 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
 [ 'd', 4 ]
 [ 'a', 1 ] */
 
+{
+  let a = Symbol();
+  let b = Symbol();
+  console.log(a === b)
 
+  let a1 = Symbol.for(1);
+  let a2 = Symbol.for(1);
+  console.log(a1 === a2)
+}
 
 
 
