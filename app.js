@@ -281,7 +281,7 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
 [ 'd', 4 ]
 [ 'a', 1 ] */
 
-{
+/* {
   let a = Symbol();
   let b = Symbol();
   console.log(a === b)
@@ -290,8 +290,8 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
   let a2 = Symbol.for(1);
   console.log(a1 === a2)
 }
-
-{
+ */
+/* {
   let a = Symbol.for('abc');
 
   let obj = {
@@ -310,7 +310,31 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
   console.log('getOwnPropertySymbols   ',Object.getOwnPropertySymbols(obj))
 
   console.log('Reflect.ownKeys()   ',Reflect.ownKeys(obj))
+} */
+{
+  let list = new Set();
+  list.add(1);
+  list.add(2);
+  console.log('size   ',list.size)
+
+  let arr = [1,2,3,4,22,99,5,6,4,3,2,1,'1','2','3'];
+  let list2 = new Set(arr);
+  console.log('list2  ',list2)//list2   Set { 1, 2, 3, 4, 5, 6, '1', '2', '3' }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
