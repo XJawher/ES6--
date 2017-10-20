@@ -291,6 +291,26 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
   console.log(a1 === a2)
 }
 
+{
+  let a = Symbol.for('abc');
+
+  let obj = {
+    [a] : 123,
+    'abc':456,
+    'def':789
+  }
+  console.log('obj',obj)//obj { abc: 456, def: 789, [Symbol(abc)]: 123 }
+
+  for(let [keys,values] of Object.entries(obj)){
+    console.log('keys,values   ',[keys,values])
+  }
+  // obj { abc: 456, def: 789, [Symbol(abc)]: 123 }
+  // [ 'abc', 456 ]
+  // [ 'def', 789 ]
+  console.log('getOwnPropertySymbols   ',Object.getOwnPropertySymbols(obj))
+
+  console.log('Reflect.ownKeys()   ',Reflect.ownKeys(obj))
+}
 
 
 
