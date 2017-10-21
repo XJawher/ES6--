@@ -311,7 +311,7 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
 
   console.log('Reflect.ownKeys()   ',Reflect.ownKeys(obj))
 } */
-{
+/* {
   let list = new Set();
   list.add(1);
   list.add(2);
@@ -325,13 +325,28 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
 
 }
 
+ */
 
+// {
+//   //map 
+//   let arr = [123];
+//   let map = new Map();
+//   map.set(arr,456);
+//   console.info('map   ',map)    //map    Map { [ 123 ] => 456 }
+// }
 
+{
+  // set  的一些方法,delete has entires clear keys values 
+  let arr = ['delete','has', 'entires', 'clear', 'keys', 'values'];
+  let list = new Set(arr);
 
-
-
-
-
+  console.log('has  ',list.has('has'))
+  console.log('delete  ',list.delete('has'),list)
+  console.log('clear  ',list.clear(),list)
+  console.log('keys  ',list.keys())
+  console.log('values  ',list.values())
+  console.log('entries  ',list.entries())
+}
 
 
 
