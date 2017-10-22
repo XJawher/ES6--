@@ -335,7 +335,7 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
 //   console.info('map   ',map)    //map    Map { [ 123 ] => 456 }
 // }
 
-{
+/* {
   // set  的一些方法,delete has entires clear keys values 
   let arr = ['delete','has', 'entires', 'clear', 'keys', 'values'];
   let list = new Set(arr);
@@ -347,9 +347,27 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
   console.log('values  ',list.values())
   console.log('entries  ',list.entries())
 }
+ */
 
 
+ {
+  let arr = [];
+  let map = new Map();
+  // 增
+  map.set('增加第一个参数','参数1');
+  arr.push('arr参数一','参数一');
+  arr.push({'tt':'参数一'});
+  arr.unshift('arr参数2','参数2');
+  arr.unshift('t','参数t');
+  console.log('map-arr',map,arr)
+  // 删
 
+  // 改
 
-
+  // 查
+  let arr_exist = arr.find(item=>item.t) ;
+  let map_exsit = map.has('增加第一个参数');
+  console.info('arr_exist,map_exsit  ',arr_exist,map_exsit)
+}
+    
 
