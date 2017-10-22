@@ -350,7 +350,7 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
  */
 
 
- {
+/*  {
   let arr = [];
   let map = new Map();
   // 增
@@ -368,6 +368,38 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
   let arr_exist = arr.find(item=>item.t) ;
   let map_exsit = map.has('增加第一个参数');
   console.info('arr_exist,map_exsit  ',arr_exist,map_exsit)
+} */
+
+{
+  // map set 和 Object 的对比
+  let item = {'t':1}//让对象 {'t':1} 存储在某个位置,方便引用
+  let map = new Map();
+  let set = new Set();
+  let obj  =  {};
+
+  //增
+  map.set('t',1);
+  set.add(item);
+  obj['t'] = 1;
+
+  console.info('map,set,obj  ' ,map,set,obj)
 }
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
