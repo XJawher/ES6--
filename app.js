@@ -370,7 +370,7 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
   console.info('arr_exist,map_exsit  ',arr_exist,map_exsit)
 } */
 
-{
+/* {
   // map set 和 Object 的对比
   let item = {'t':1}//让对象 {'t':1} 存储在某个位置,方便引用
   let map = new Map();
@@ -383,7 +383,120 @@ console.log(Arr)//[ 'milk', 'tea', 'hotpot', 'wine', 'beer', '老干妈' ] 去�
   obj['t'] = 1;
 
   console.info('map,set,obj  ' ,map,set,obj)
+} */
+
+{
+  // 类的基本定义和生成实例
+  class parent {
+    // 通过 class 关键字定义有个空的类
+    constructor (name = 'lipc') {//构造函数
+      this.name = name;
+    }
+  }
+  // 生成实例
+  let ec = new parent('love');
+  console.log('ec  ',ec)//parent { name: 'love' }
+
 }
+
+{
+  // 继承
+  class parent {
+    // 通过 class 关键字定义有个空的类
+    constructor (name = 'lipc') {//构造函数
+      this.name = name;
+    }
+  }
+
+  class child extends parent {
+
+  }
+  let child_class = new child("child");
+  console.log('child  ',child_class)
+
+}
+
+{
+  // 继承
+  class parent {
+    // 通过 class 关键字定义有个空的类
+    constructor (name = 'lipc') {//构造函数
+      this.name = name;
+    }
+  }
+
+  class child extends parent {
+    constructor (name = 'super child') {
+      super (name)
+    }
+  }
+  let child_class = new child();
+  console.log('child  ',child_class)//child   child { name: 'super child' }
+
+}
+
+{
+  // getter  setter
+  class parent {
+    // 通过 class 关键字定义有个空的类
+    constructor (name = 'lipc') {//构造函数
+      this.name = name;
+    }
+    get longName () {
+      return 'longName + ' + this.name
+    }
+
+    set longName (value) {
+      this.name = value
+    }
+  }//要注意这里的 longName 不是方法而是属性,是属性!!!!
+
+  
+  let child_class = new parent();
+  console.log('getter  ',child_class.longName)//getter   longName + lipc
+  child_class.longName = 'hello'
+  console.log('setter  ',child_class.longName)//setter   longName + hello
+
+}
+
+{
+  class parent {
+    // 通过 class 关键字定义有个空的类
+    constructor (name = 'lipc') {//构造函数
+      this.name = name;
+    }
+    static tell() {
+      console.log('static 静态方法')
+    }
+  }
+  parent.tell()//静态方法
+  parent.静态属性 = '静态属性';
+  console.log('parent.静态属性= ',parent.静态属性)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
